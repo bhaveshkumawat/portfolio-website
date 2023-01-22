@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Righteous&family=Roboto:wght@300;400;500;700&display=swap');
+/* CSS Reset */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+:root{
+    --FFNAME:'Dancing Script', cursive , sans-serif;
+    --FFHEADING: 'Righteous', cursive,sans-serif;
+    --FFCONTENT: 'Roboto', sans-serif;
+    --FONTSIZE: clamp(1rem,2vh,1.5rem);
+    --FONTSIZEName: clamp(1.5rem,4vw,6rem);
+    --FONTSizeSubheader: clamp(1rem,2vw,3rem);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    height: 100%;
+    font-family: var(--FFCONTENT);
+    background-color: white;
+}
+.header{
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 4px 20px 8px rgb(167, 166, 166);
+    background-color: white;
+
+}
+
+.header__nav__ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.header__nav__item{
+    margin-inline: 20px;
+    font-size: var(--FONTSIZE);
+}
+
+.hero{
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--FFNAME);
+    font-weight: bold;
+    font-size: var(--FONTSIZEName);
+    background-color: white;
+    background-image: url('../assets/images/watercolor-gc1a68fd65_1280.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 93vh;
+    width: 100%;
+}
+.hero--subheader{
+    font-family: var(--FFCONTENT);
+    font-weight: lighter;
+    font-size: var(--FONTSizeSubheader);
+    text-align: center;
+}
+
+h1:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.hero__img{
+    background-color:aliceblue;
+    width: 50%;
+    height: auto;
+}
